@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #141d26;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: white;
+}
+
+.intro .nama {
+  text-align: center;
+}
+
+.container-satu {
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-between;
+  font-size: 30px;
+  width: 80%;
+}
+
+.foto,
+.tulisan-opening {
+  width: 100%;
+}
+.foto img {
+  border-radius: 50%;
+  height: 100%;
+  padding: 0px;
+  margin: 0;
+  border: 3px solid white;
+}
+
+.pendidikan {
+  background-color: white;
+  color: black;
+  margin-top: -30px;
+}
+.pendidikan h2 {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.container-dua {
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 800px;
+}
+.thumbnail {
+  width: 50%;
+  position: relative;
+}
+
+.caption {
+}
+.thumbnail img {
+  margin-left: 100px;
+  width: 60%;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.its img {
+  padding-top: 30px;
+}
+
+.hobi h3 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.container-tiga {
+  display: flex;
+  max-width: 50px auto;
+  justify-content: center;
+}
+
+footer {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.container-dua table {
+  margin: 15px;
+}
+
+.container-dua table td {
+  padding: 10px;
+}
+
+.container-dua table {
+  margin: 15px;
+}
+
+.container-dua table td {
+  padding: 5px;
+}
