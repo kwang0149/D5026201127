@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TugasController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\PendapatanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,3 +49,14 @@ Route::get('/pegawai/hapus/{id}',[PegawaiController::class,'hapus']);
 //     return view('home');
 // });
 
+Route::get('pendapatan',[PendapatanController::class,'index']);
+
+Route::get('pendapatan/tambah',[PendapatanController::class,'tambah']);
+
+Route::post('pendapatan/store',[PendapatanController::class,'store']);
+
+Route::get('pendapatan/edit/{id_pegawai}',[PendapatanController::class,'edit']);
+
+Route::post('pendapatan/update',[PendapatanController::class,'update']);
+
+Route::get('pendapatan/hapus/{id_pegawai}',[PendapatanController::class,'delete']);
