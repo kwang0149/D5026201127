@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 0.1px solid black; */
+  box-sizing: border-box;
+}
+.main-product {
+  width: 1300px;
+  height: 760px;
+  /* border: 3px solid black; */
+}
+/* bagian kiri: 384 x 663 */
+/* bagian kanan: 576 x 663 */
+
+.main-product .kiri {
+  height: 663px;
+}
+
+.main-product .kanan {
+  height: 663px;
+}
+
+.kiri .bagikan:hover,
+.favoritkan:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* kanan */
+.kanan .product-title {
+  font-size: 10px;
+}
+
+.kanan .pengiriman .keterangan {
+  font-size: 0.8rem;
+}
+.kanan .pengiriman .lokasi {
+  font-size: 0.9rem;
+}
+.kanan .ubah-alamat {
+  font-size: 0.8rem;
+  border-bottom: 1px dashed black;
+}
+
+.kanan .nama-kurir {
+  font-size: 12px;
+}
+
+.kanan .harga-pengiriman p {
+  font-size: 14px;
+}
+
+.kanan button {
+  height: 52px;
+  transition: none;
+}
+.kanan button:hover {
+  background-color: rgb(199, 198, 198);
+}
+
+.kanan .beli-sekarang:hover {
+  background-color: #a52532;
+}
+.kanan .gambar-aplikasi {
+  height: 70px;
+}
+.kanan .aplikasi p {
+  font-size: 0.8rem;
+  color: rgb(133, 130, 130);
+}

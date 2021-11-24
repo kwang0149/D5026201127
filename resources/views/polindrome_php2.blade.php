@@ -41,7 +41,7 @@
             
         </div>
         <div class="row col-3 mx-auto mt-5">        <button  class="mx-auto btn btn-primary"><a class="text-decoration-none text-white" href="/tugas-php">Reset</a></button></div>
-
+         <div class="row col-3 mx-auto mt-5">        <button  class="mx-auto btn btn-primary"><a class="text-decoration-none text-white" href="/">Home</a></button></div>
         </form>
         
         </div>
