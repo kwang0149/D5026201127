@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AbsenController;
 use App\Http\Controllers\TugasController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PendapatanController;
@@ -59,4 +60,13 @@ Route::get('pendapatan/edit/{id_pegawai}',[PendapatanController::class,'edit']);
 
 Route::post('pendapatan/update',[PendapatanController::class,'update']);
 
+
 Route::get('pendapatan/hapus/{id_pegawai}',[PendapatanController::class,'delete']);
+
+Route::get('/absen',[AbsenController::class,'index']);
+Route::get('/absen/tambah',[AbsenController::class,'tambah']);
+Route::post('/absen/store',[AbsenController::class,'store']);
+Route::get('/absen/edit/{id}',[AbsenController::class,'edit']);
+Route::post('/absen/update',[AbsenController::class,'update']);
+Route::get('/absen/hapus/{id}',[AbsenController::class,'hapus']);
+
