@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tugas PWeb</title>
-</head>
-<body>
 
+@extends('layout.happy')
+@section('title', 'Data Pegawai')
+@section('content')
 	<h2>Tabel Pendapatan</h2>
 
 	<a href="/pendapatan/tambah"> + Tambah Data Baru</a>
@@ -12,13 +9,14 @@
 	<br/>
 	<br/>
 
-	<table border="1">
+	<table class="table table-responsive table-bordered mb-5 pb-5 table-striped">
 		<tr>
 			<th>IDPegawai</th>
 			<th>Bulan</th>
 			<th>Tahun</th>
 			<th>Gaji</th>
 			<th>Tunjangan</th>
+			<th></th>
 		</tr>
 		@foreach($pendapatan as $p)
 		<tr>
@@ -35,7 +33,4 @@
 		</tr>
 		@endforeach
 	</table>
-
-
-</body>
-</html>
+@endsection

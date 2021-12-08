@@ -24,10 +24,8 @@ class AbsenController extends Controller
 public function tambah()
 {
     $pegawai = DB::table('pegawai')->orderBy('nama', 'asc')->get();
-
 	// memanggil view tambah
 	return view('absen.tambah',['pegawai' => $pegawai]);
-
 }
 
 

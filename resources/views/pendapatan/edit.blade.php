@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tugas PWeb</title>
-</head>
-<body>
+
+@extends('layout.happy')
+@section('title', 'Data Pegawai')
+@section('content')
 
 	<h3>Edit Pendapatan</h3>
 
@@ -26,5 +24,4 @@
 	@endforeach
 		
 
-</body>
-</html>
+@endsection

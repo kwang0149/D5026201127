@@ -1,19 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
-</head>
-<body>
- 
-	<h2>www.malasngoding.com</h2>
-	<h3>Data Pegawai</h3>
- 
-	<a href="/pegawai/tambah"> + Tambah Pegawai Baru</a>
+
+ @extends('layout.happy')
+@section('title', 'Edit Absen')
+
+@section('content')
+	<a class="text-decoration-none" href="/pegawai/tambah" >Tambah Pegawai Baru</a>
 	
 	<br/>
 	<br/>
  
-	<table border="1">
+	<table class=" table table-responsive table-bordered mb-5 pb-5 table-striped">
 		<tr>
 			<th>Nama</th>
 			<th>Jabatan</th>
@@ -28,14 +23,14 @@
 			<td>{{ $p->umur }}</td>
 			<td>{{ $p->alamat }}</td>
 			<td>
-				<a href="/pegawai/edit/{{ $p->id }}">Edit</a>
+				<a class="text-decoration-none" href="/pegawai/edit/{{ $p->id }}">Edit</a>
 				|
-				<a href="/pegawai/hapus/{{ $p->id }}">Hapus</a>
+				<a class="text-decoration-none" href="/pegawai/hapus/{{ $p->id }}">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
 	</table>
  
+@endsection
  
-</body>
-</html>
+	

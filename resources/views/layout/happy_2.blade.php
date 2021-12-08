@@ -48,24 +48,23 @@
 <body>
     <div class="container-fluid">
         <div class="row m-5">
-                
-            <aside class="col-3">
-                <header>
-                    <div class="row">
-                        <div class="col text-center">
-                            <img src="{{ asset('img/foto-diri.png') }}" class="w-50  rounded-circle border"/>
+            <aside class="col-2">
+                <header class="row navbar-brand container rounded bg-secondary bg-opacity-10 p-2">
+                    <div class="col-3 py-2">
+                        <a href="https://bebekpakeb.github.io" class="navbar-brand">
+                            <img src="{{ asset('img/foto-diri full.png') }}" class="img-fluid rounded float-start "/>
+                        </a>
+                    </div>
+                    <div class="col-9 fw-bold text-wrap text-decoration-none text-dark py-2">
+                        <div class="row">
+                            <span>5026201127</span>
+                        </div>
+                        <div class="row">
+                            <span>C Hong Kwang</span>
                         </div>
                     </div>
-                    <div class="row text-center">
-                        <div class="float-start ">
-                        <h5>5026201127</h5>
-                        <h5>C Hong Kwang</h5>
-                    </div>
-                </div>
-                    
                 </header>
-                
-                <div class="row container rounded bg-primary bg-opacity-10 mt-4 p-2">
+                <div class="row container rounded bg-secondary bg-opacity-10 mt-4 p-2">
                     <nav class="navbar navbar-expand align-items-start py-2 sticky-top">
                         <div class="col fw-bold">
                             <div class="align-items-center text-center mb-1 p-1 border-bottom">
@@ -92,8 +91,8 @@
                       </nav>
                 </div>
             </aside>
-            <div class="col-9">
-                <div class="row container-fluid rounded bg-primary bg-opacity-10 p-5">
+            <div class="col-10">
+                <div class="row container-fluid rounded bg-secondary bg-opacity-10 p-5">
                     @yield('content')
                     {{-- @show --}}
                 </div>
