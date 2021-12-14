@@ -7,12 +7,23 @@ use Illuminate\Http\Request;
 class PendapatanController extends Controller
 {
     //
+
+	//     public function index(){
+    //     $absen = DB::table('absen')
+    //     ->join('pegawai', 'absen.IDPegawai', '=', 'pegawai.pegawai_id')
+    //     ->select('absen.*', 'pegawai.pegawai_nama')
+    //     ->paginate(5);
+    //     return view('absen.index',['absen' => $absen]);
+    // }
     public function index(){
         // ambil data dari tabel pendapatan
 
 		$pendapatan = DB::table('pendapatan')
         ->join('pegawai', 'pendapatan.ID', '=', 'pegawai.id')
-        ->select('pendapatan.*', 'pegawai.nama');
+        ->select('pendapatan.*', 'pegawai.nama')
+		->paginate(5);
+		
+
 
         // mengirim data pendapatan ke view index
         return view('pendapatan.index',['pendapatan'=>$pendapatan]);

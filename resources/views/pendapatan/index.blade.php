@@ -20,7 +20,7 @@
 		</tr>
 		@foreach($pendapatan as $p)
 		<tr>
-			<td>{{ $p->nama  }}</td>
+			{{-- <td>{{ $p->nama  }}</td> --}}
 			<td>{{ $p->Bulan }}</td>
 			<td>{{ $p->Tahun  }}</td>
 			<td>{{ $p->Gaji  }}</td>
@@ -33,4 +33,5 @@
 		</tr>
 		@endforeach
 	</table>
+		{{ $pendapatan->links() }}
 @endsection
