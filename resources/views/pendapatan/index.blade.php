@@ -11,7 +11,7 @@
 
 	<table class="table table-responsive table-bordered mb-5 pb-5 table-striped">
 		<tr>
-			<th>IDPegawai</th>
+			<th>Nama</th>
 			<th>Bulan</th>
 			<th>Tahun</th>
 			<th>Gaji</th>
@@ -20,7 +20,7 @@
 		</tr>
 		@foreach($pendapatan as $p)
 		<tr>
-			<td>{{ $p->IDPegawai  }}</td>
+			<td>{{ $p->nama  }}</td>
 			<td>{{ $p->Bulan }}</td>
 			<td>{{ $p->Tahun  }}</td>
 			<td>{{ $p->Gaji  }}</td>

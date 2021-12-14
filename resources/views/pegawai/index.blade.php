@@ -18,6 +18,7 @@
 		</tr>
 		@foreach($pegawai as $p)
 		<tr>
+			<td>{{ $loop->iteration }}</td>
 			<td>{{ $p->nama }}</td>
 			<td>{{ $p->jabatan }}</td>
 			<td>{{ $p->umur }}</td>
@@ -31,6 +32,9 @@
 		@endforeach
 	</table>
  
+{{ $pegawai->links()  }}
+
+
 @endsection
  
 	
