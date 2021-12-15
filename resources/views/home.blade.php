@@ -94,6 +94,8 @@
                     <a href="/praktikum2">Praktikum 2</a>
                     <a href="/uts">ETS</a>
                     <a href="/tugas-php">Tugas PHP</a>
+                    <a href="/minuman">Praktikum 3</a>
+                    <a href="/karyawan">UAS</a>
                 </div>
             </div>
         </div>

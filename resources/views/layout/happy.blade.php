@@ -85,7 +85,7 @@
                                     <a href="#" class="nav-link disabled">Minggu Depan</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link disabled">Praktikum</a>
+                                    <a href="/minuman" class="nav-link text-dark">Praktikum</a>
                                 </li>
                             </ul>
                         </div>

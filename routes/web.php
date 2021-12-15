@@ -5,6 +5,7 @@ use App\Http\Controllers\AbsenController;
 use App\Http\Controllers\TugasController;
 use App\Http\Controllers\MinumanController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\PendapatanController;
 
 /*
@@ -79,3 +80,8 @@ Route::get('/minuman/hapus/{kodeminuman}',[MinumanController::class,'hapus']);
 
 Route::get('/minuman/cari',[MinumanController::class,'cari']);
 Route::get('/minuman/detail/{kodeminuman}',[MinumanController::class,'detail']);  
+
+Route::get('/karyawan',[KaryawanController::class,'index']);  
+Route::get('/karyawan/tambah',[KaryawanController::class,'tambah']);
+Route::post('/karyawan/store',[KaryawanController::class,'store']);
+Route::get('/karyawan/hapus/{NIP}',[KaryawanController::class,'hapus']);
